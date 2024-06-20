@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Information</title>
+    <title>Courses</title>
+    <link rel="stylesheet" href="C55/styles.css">
 </head>
 <body>
-    <select id="course-dropdown"></select>
-    <button onclick="DisplayCourse()">Show Course</button>
-
-    <table id="course-info-table" style="display:none;">
+    <h1>Courses</h1>
+    <table id="coursesTable">
         <thead>
             <tr>
-                <th>Course Department</th>
+                <th>Department</th>
                 <th>Course Number</th>
-                <th>Course Title</th>
+                <th>Title</th>
             </tr>
         </thead>
-        <tbody id="course-info"></tbody>
+        <tbody>
+            <!-- Course rows will be inserted here by JavaScript -->
+        </tbody>
     </table>
-
-    <script src="/scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
+
 
 

@@ -2,12 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const courseDetailsDiv = document.getElementById('courseDetails');
-    const urlParams = new URLSearchParams(location.search);
-    
+    const urlParams = new URLSearchParams(window.location.search);
+
     let id = -1;
     if (urlParams.has("courseid")) {
         id = urlParams.get("courseid");
-        
+
         fetch(`http://localhost:8081/api/courses/${id}`)
             .then(response => response.json())
             .then(course => {
@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         courseDetailsDiv.innerHTML = '<p>Error: No course ID provided in query string.</p>';
     }
 });
+
+
+
 
 
 

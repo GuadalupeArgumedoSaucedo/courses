@@ -1,5 +1,5 @@
 // scripts/courses.js
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const departmentSelect = document.getElementById("departmentSelect");
     const coursesTableBody = document.querySelector('#coursesTable tbody');
@@ -55,4 +55,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
-  
+  */
